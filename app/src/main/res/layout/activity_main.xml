@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_colour"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:background="@drawable/roundcorner"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilepic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:textSize="25dp"
+            android:text="Christopher"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:textSize="25dp"
+            android:text="Shelton"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:textSize="20dp"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/fname"
+        android:textColor="#f6f6f6"
+        android:layout_marginTop="80dp"
+        android:text="Krakow,"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:textSize="20dp"
+        android:layout_marginLeft="220dp"
+        android:layout_below="@+id/lname"
+        android:textColor="#f6f6f6"
+        android:layout_marginTop="80dp"
+        android:text="Poland"
+        tools:ignore="NotSibling" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/profilepic"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#f6f6f6"
+            android:layout_marginTop="130dp"
+            android:text="RIDES"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#f6f6f6"
+            android:layout_marginTop="130dp"
+            android:text="FREE RIDES"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="#f6f6f6"
+            android:layout_marginTop="130dp"
+            android:text="CREDITS"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:orientation="horizontal"
+        android:id="@+id/linear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/rides"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="67"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/freerides"
+            android:layout_marginLeft="86dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/currency_sym"
+            android:layout_marginLeft="96dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="$"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/value"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="67"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Past Trips"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="30dp"
+        android:textColor="#f05e23"
+        android:layout_marginLeft="300dp"
+        android:textSize="20dp"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/past"
+        android:layout_below="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+</ScrollView>
